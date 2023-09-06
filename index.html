@@ -7,10 +7,49 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./dist/main.css" />
   <script src="./dist/main.js"></script>
-  <title>Project Name</title>
+  <title>Ostinator</title>
 </head>
 
 <body>
+  <div class="main">
+    <h1>Ostinator</h1>
+  </div>
+  <div class="options">
+    <div class="bpm">
+      <div id="string-radio-input">
+        <label for="string-radio-input">Number of Guitar Strings</label>
+        <br/>
+        <input type="radio" name="strings" id="six">
+        <label for="six">6</label>
+
+        <input type="radio" name="strings" id="seven">
+        <label for="seven">7</label>
+
+        <input type="radio" name="strings" id="eight">
+        <label for="eight">8</label>
+
+        <input type="radio" name="strings" id="nine">
+        <label for="nine">9</label>
+      </div>
+      <br/>
+      <label for="bpm">
+        BPM
+        <input type="range" name="bpm" id="bpm-slider" min="40" max="300">
+      </label>
+      <br>
+      <label for="complexity">
+        Complexity
+        <input type="range" name="complexity" id="complexity-slider" min="1" max="20">
+      </label>
+
+      <div id="time-signature">
+        <input type="number" name="numerator" id="numerator" min="1" max="30" step="1">
+        input
+      </div>
+      
+    </div>
+    
+  </div>
 </body>
 
 </html>
